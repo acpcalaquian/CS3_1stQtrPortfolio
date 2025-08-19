@@ -1,13 +1,19 @@
+</body>
+
 <body>
- <h1 style="color:lightsteelblue;font-size: 30px">ꕤ First Non-Graded Exercise!</h1>
-  <p style="color:lightsteelblue;font-size: 20px"></style> ──────── ୨୧ ────────
-    <script>
-// let, var, const
-// declare variables
-let age=14;
-let maxAge= 19257;
-let numPerDay = 5;
-let  totalRequired = (numPerDay * 365) * (maxAge - age);
-document.write(" You will need " + totalRequired + " bowls of buldak to live until the ripe old age of " + maxAge);
-    </script>
+  <h1 style="color:lightsteelblue;font-size: 30px">ꕤ First Non-Graded Exercise!</h1>
+  <p style="color:lightsteelblue;font-size: 20px"> ──────── ୨୧ ──────── </p>
+  <p id="output" style="color:rgb(176, 196, 222); font-size:18px"></p>
+
+  <script>
+    // let, var, const
+    // declare variables
+    let age = 14;
+    let maxAge = 100;
+    let numPerDay = 12;
+    let totalRequired = (numPerDay * 365) * (maxAge - age);
+
+    document.getElementById("output").innerHTML =
+      "You will need " + totalRequired + " creampuffs to live until the ripe old age of " + maxAge;
+  </script>
 </body>

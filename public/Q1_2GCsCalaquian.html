@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 style="color:lightsteelblue;font-size: 30px">ꕤ Second Graded Exercise!</h1>
+    <p style="color:lightsteelblue;font-size: 20px"> ──────── ୨୧ ──────── </p>
+    <p id="output" style="color:rgb(176, 196, 222); font-size:18px"></p>
+
+    <h2> Q1 2nd Graded Exercise submitted by Amanda Calaquian of 9-CESIUM </h2>
+
+    <label> <br> Meal Price:
+      <input id="MealPrice" />
+    </label> <br>
+
+    <label> <br> Tip:
+      <input id="Tip" />
+    </label> <br>
+
+    <label> <br> Service Charge:
+      <input id="ServiceCharge" />
+    </label> <br>
+
+    <button onclick="checkTotalMeal()">Accept Input</button>
+    <p>Total Meal: <span id="TotalMeal"></span></p>
+
+    <script>
+      function checkTotalMeal() {
+        let mp = parseFloat(document.getElementById("MealPrice").value);
+        let tip = parseFloat(document.getElementById("Tip").value);
+        let sc = parseFloat(document.getElementById("ServiceCharge").value);
+
+        let totalCost = mp + tip + (sc / 100 * mp);
+
+        document.getElementById("TotalMeal").innerHTML = totalCost.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
